@@ -8,6 +8,7 @@ namespace PSP1Strategy
         private bool _isUniversityMainActivity;
         private string[] _distratctions;
         private IAttendancePolicy _attendancePolicy;
+        private IScholarshipConditionCalculator _scholarshipCalculator;
         private double _attendancePercent;
 
         public void SetDistractions(string[] distractions)
@@ -37,7 +38,8 @@ namespace PSP1Strategy
 
         public double CalculateChanceOfScholarship(IScholarshipConditionCalculator condition)
         {
-            return condition.CalculateChance(_attendancePercent);
+            _scholarshipCalculator = condition;
+            return _scholarshipCalculator.CalculateChance(_attendancePercent);
         }
     }
 }
