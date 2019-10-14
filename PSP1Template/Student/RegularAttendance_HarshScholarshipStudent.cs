@@ -8,6 +8,21 @@ namespace PSP1Template
 {
     class RegularAttendance_HarshScholarshipStudent : Student
     {
+        #region
+        //private RegularAttendance _regularAttendance;
+        //private HarshScholarship _harshScholarship;
+        //public RegularAttendance_HarshScholarshipStudent(RegularAttendance attendance, HarshScholarship scholarship)
+        //{
+        //    _regularAttendance = attendance;
+        //    _harshScholarship = scholarship;
+        //}
+
+        //protected override double AdjustIfMainActivity(bool isMain, double chance)
+        //{
+        //    return _regularAttendance.AdjustIfMainActivity(isMain, chance);
+        //}
+        #endregion
+
         protected override double AdjustIfMainActivity(bool isMain, double chance)
         {
             if (isMain)

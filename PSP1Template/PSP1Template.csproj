@@ -46,10 +46,14 @@
     <Compile Include="Lecturer\LazyAttendanceLecturer.cs" />
     <Compile Include="Lecturer\Lecturer.cs" />
     <Compile Include="Lecturer\RegularAttendanceLecturer.cs" />
+    <Compile Include="Student\BasicScholarship.cs" />
+    <Compile Include="Student\HarshScholarship.cs" />
+    <Compile Include="Student\LazyAttendance.cs" />
     <Compile Include="Student\LazyAttendance_BasicScholarshipStudent.cs" />
     <Compile Include="Student\LazyAttendance_HarshScholarshipStudent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student\RegularAttendance.cs" />
     <Compile Include="Student\RegularAttendance_BasicScholarshipStudent.cs" />
     <Compile Include="Student\RegularAttendance_HarshScholarshipStudent.cs" />
     <Compile Include="Student\Student.cs" />
