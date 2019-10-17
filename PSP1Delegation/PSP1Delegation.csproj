@@ -46,7 +46,7 @@
     <Compile Include="Components\BasicRewardPolicy.cs" />
     <Compile Include="Components\Interfaces\IAttendancePolicy.cs" />
     <Compile Include="Components\Interfaces\IRewardPolicy.cs" />
-    <Compile Include="Components\Interfaces\IYearsInUni.cs" />
+    <Compile Include="Components\Interfaces\IDateCalculator.cs" />
     <Compile Include="Components\RegularAttendancePolicy.cs" />
     <Compile Include="Components\YearsInUniversityCalculator.cs" />
     <Compile Include="Entities\Lecturer.cs" />
