@@ -33,5 +33,14 @@ namespace PSP1Delegation.Components
             var temp = Math.Abs(chance - (100 * (0.1 * distractions.Length)));
             return AdjustIfMainActivity(isMain, temp);
         }
+
+        public double CalculateChanceOfAttendance(string[] distractions, bool isMain)
+        {
+            double chance = 100;
+            if (CheckUniqueness(distractions))
+                return ChanceOfAttendance(distractions, isMain, chance);
+            else
+                return -1;
+        }
     }
 }

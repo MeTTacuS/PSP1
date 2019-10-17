@@ -14,7 +14,7 @@ namespace PSP1Delegation
             regularStudent.IsUniversityMainActivity = false;
             regularStudent.AttendancePercent = 95;
 
-            Console.WriteLine("Chance of attendance is " + regularStudent.CalculateChanceOfAttendance());
+            Console.WriteLine("Chance of attendance is " + regularStudent.CalculateChanceOfAttendance(regularStudent.Distractions, regularStudent.IsUniversityMainActivity));
             Console.WriteLine("Chance of scholarship is " + regularStudent.CalculateRewardChance(regularStudent.AttendancePercent));
 
             var securityGuard = new RegularAttendanceBasicRewardSecurityGuard(new RegularAttendancePolicy(), new BasicRewardPolicy(), new YearsInUniversityCalculator());
@@ -24,7 +24,7 @@ namespace PSP1Delegation
             securityGuard.IsUniversityMainActivity = true;
             securityGuard.AttendancePercent = 100;
 
-            Console.WriteLine("\nChance of attendance is " + securityGuard.CalculateChanceOfAttendance());
+            Console.WriteLine("\nChance of attendance is " + securityGuard.CalculateChanceOfAttendance(securityGuard.Distractions, securityGuard.IsUniversityMainActivity));
             Console.WriteLine("Chance of reward is " + securityGuard.CalculateRewardChance(securityGuard.AttendancePercent));
             Console.WriteLine("Chance of getting fired is " + securityGuard.GetRiskOfBeingFired());
 

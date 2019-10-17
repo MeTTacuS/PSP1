@@ -41,18 +41,14 @@ namespace PSP1Delegation
             return _dateCalculator.TimeSpentInUniversity(joinedDate);
         }
 
-        public double CalculateChanceOfAttendance()
-        {
-            double chance = 100;
-            if (CheckUniqueness(Distractions))
-                return ChanceOfAttendance(Distractions, IsUniversityMainActivity, chance);
-            else
-                return -1;
-        }
-
         public double CalculateRewardChance(double attendancePercent)
         {
             return _scholarshipPolicy.CalculateRewardChance(AttendancePercent);
+        }
+
+        public double CalculateChanceOfAttendance(string[] distractions, bool isMain)
+        {
+            return _attendancePolicy.CalculateChanceOfAttendance(distractions, isMain);
         }
     }
 }

@@ -11,5 +11,6 @@ namespace PSP1Delegation.Components.Interfaces
         bool CheckUniqueness(string[] distractions);
         double AdjustIfMainActivity(bool isMain, double chance);
         double ChanceOfAttendance(string[] distractions, bool isMain, double chance);
+        double CalculateChanceOfAttendance(string[] distractions, bool isMain);
     }
 }
