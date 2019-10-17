@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSP1Strategy", "PSP1\PSP1St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSP1Template", "PSP1Template\PSP1Template.csproj", "{669A92C0-51D2-4C07-951B-F5C0A44EEA29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSP1Delegation", "PSP1Delegation\PSP1Delegation.csproj", "{25ADDD34-6EA7-4996-9C7B-E47CC4B0D5AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{669A92C0-51D2-4C07-951B-F5C0A44EEA29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{669A92C0-51D2-4C07-951B-F5C0A44EEA29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{669A92C0-51D2-4C07-951B-F5C0A44EEA29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25ADDD34-6EA7-4996-9C7B-E47CC4B0D5AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25ADDD34-6EA7-4996-9C7B-E47CC4B0D5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25ADDD34-6EA7-4996-9C7B-E47CC4B0D5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25ADDD34-6EA7-4996-9C7B-E47CC4B0D5AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
