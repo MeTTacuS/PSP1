@@ -7,7 +7,7 @@ namespace PSP1Delegation
     {
         static void Main(string[] args)
         {
-            var regularStudent = new RegularAttendanceBasicRewardStudent(new RegularAttendancePolicy(), new BasicRewardPolicy(), new YearsInUniversityCalculator());
+            var regularStudent = new RegularAttendanceBasicRewardStudent();
             string[] distractions = new string[] { "is tired", "after vacation", "lazy" };
             regularStudent.SetJoinedDate(new DateTime(2017, 09, 01));
             regularStudent.Distractions = distractions;
@@ -17,7 +17,7 @@ namespace PSP1Delegation
             Console.WriteLine("Chance of attendance is " + regularStudent.CalculateChanceOfAttendance(regularStudent.Distractions, regularStudent.IsUniversityMainActivity));
             Console.WriteLine("Chance of scholarship is " + regularStudent.CalculateRewardChance(regularStudent.AttendancePercent));
 
-            var securityGuard = new RegularAttendanceBasicRewardSecurityGuard(new RegularAttendancePolicy(), new BasicRewardPolicy(), new YearsInUniversityCalculator());
+            var securityGuard = new RegularAttendanceBasicRewardSecurityGuard();
             distractions = new string[] { "likes television", "plays computer games" };
             securityGuard.SetJoinedDate(new DateTime(2015, 03, 04));
             securityGuard.Distractions = distractions;

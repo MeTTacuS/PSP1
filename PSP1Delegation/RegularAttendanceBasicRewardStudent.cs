@@ -1,4 +1,5 @@
-﻿using PSP1Delegation.Components.Interfaces;
+﻿using PSP1Delegation.Components;
+using PSP1Delegation.Components.Interfaces;
 using PSP1Delegation.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,16 +11,9 @@ namespace PSP1Delegation
 {
     class RegularAttendanceBasicRewardStudent : Student, IAttendancePolicy, IRewardPolicy, IDateCalculator
     {
-        private IAttendancePolicy _attendancePolicy;
-        private IRewardPolicy _scholarshipPolicy;
-        private IDateCalculator _dateCalculator;
-
-        public RegularAttendanceBasicRewardStudent(IAttendancePolicy attendancePolicy, IRewardPolicy scholarshipPolicy, IDateCalculator dateCalculator)
-        {
-            _attendancePolicy = attendancePolicy;
-            _scholarshipPolicy = scholarshipPolicy;
-            _dateCalculator = dateCalculator;
-        }
+        private IAttendancePolicy _attendancePolicy = new RegularAttendancePolicy();
+        private IRewardPolicy _scholarshipPolicy = new BasicRewardPolicy();
+        private IDateCalculator _dateCalculator = new YearsInUniversityCalculator();
 
         public double AdjustIfMainActivity(bool isMain, double chance)
         {
