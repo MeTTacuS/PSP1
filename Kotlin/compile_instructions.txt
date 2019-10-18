@@ -1,0 +1,2 @@
+kotlinc 13_kotlin.kt -include-runtime -d hello.jar
+java -jar hello.jar
